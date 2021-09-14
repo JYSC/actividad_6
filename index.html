@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Focos locos</h1>
+    <hr>
+    <table>
+        <tr>
+            <td>Foco 1</td> 
+            <td>
+             <img src="focoOff.png" alt="foco" id="imagen1" onclick="cambiar1();">
+            </td>
+            
+            </tr>
+            <tr>
+            <td>Foco 2</td>
+            <td>
+                <img src="focoOff.png" alt="foco" id="imagen2" onclick="cambiar2();">
+            </td>
+            
+        </tr>
+
+    </table>
+    <script>
+        function cambiar1()
+        {
+            let foco = document.getElementById('imagen1');
+
+            if(foco.src.match("focoOff"))
+            {
+                foco.src = "focoOn.png"
+            }
+            else
+            {
+                foco.src = "focoOff.png"
+            }
+        }
+        function cambiar2()
+        {
+            let foco = document.getElementById('imagen2');
+
+            if(foco.src.match("focoOff"))
+            {
+                foco.src = "focoOn.png"
+            }
+            else
+            {
+                foco.src = "focoOff.png"
+            }
+        }
+    
+    </script>
+</body>
+</html>
